@@ -70,6 +70,7 @@ class A1Env(gym.Env):
     # Looks at x,y coordinates of agent
     # Looks at the base orientation of the agent for falling
     # Looks at the angle for each joint
+    # All of these are arbitrarily guessed
     self.observation_space = gym.spaces.box.Box(
         low = np.array([-30,-30,-360,-180,-180,-180,-180,-180,-180,-180,-180,-180,-180,-180,-180]),
         high = np.array([30,30,360,180,180,180,180,180,180,180,180,180,180,180,180])
